@@ -2947,7 +2947,7 @@ define("guiprocessmanager", ["require", "exports", "colorreductionmanagement", "
                                 svgPath.style.stroke = `rgb(${colorsByIndex[f.color][0]},${colorsByIndex[f.color][1]},${colorsByIndex[f.color][2]})`;
                             }
                         }
-                        svgPath.style.strokeWidth = "5px"; // Set stroke width
+                        svgPath.style.strokeWidth = "0.3px"; // Set stroke width
                         if (fill) {
                             svgPath.style.fill = `rgb(${colorsByIndex[f.color][0]},${colorsByIndex[f.color][1]},${colorsByIndex[f.color][2]})`;
                         }
