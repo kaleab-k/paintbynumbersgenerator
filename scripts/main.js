@@ -2937,7 +2937,8 @@ define("guiprocessmanager", ["require", "exports", "colorreductionmanagement", "
                         // Set path's data
                         svgPath.setAttribute("d", data);
                         if (stroke) {
-                            svgPath.style.stroke = "#000";
+                            // svgPath.style.stroke = "#000";
+                            svgPath.style.stroke = `rgb(${colorsByIndex[f.color][0]},${colorsByIndex[f.color][1]},${colorsByIndex[f.color][2]})`;
                         }
                         else {
                             // make the border the same color as the fill color if there is no border stroke
@@ -2946,7 +2947,7 @@ define("guiprocessmanager", ["require", "exports", "colorreductionmanagement", "
                                 svgPath.style.stroke = `rgb(${colorsByIndex[f.color][0]},${colorsByIndex[f.color][1]},${colorsByIndex[f.color][2]})`;
                             }
                         }
-                        svgPath.style.strokeWidth = "1px"; // Set stroke width
+                        svgPath.style.strokeWidth = "0.51px"; // Set stroke width
                         if (fill) {
                             svgPath.style.fill = `rgb(${colorsByIndex[f.color][0]},${colorsByIndex[f.color][1]},${colorsByIndex[f.color][2]})`;
                         }
