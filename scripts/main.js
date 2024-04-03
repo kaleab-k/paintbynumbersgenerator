@@ -2948,6 +2948,8 @@ define("guiprocessmanager", ["require", "exports", "colorreductionmanagement", "
                             }
                         }
                         svgPath.style.strokeWidth = "0.3px"; // Set stroke width
+                        svgPath.style.strokeLinejoin = "round"; // Set stroke smoothness
+                        svgPath.style.strokeLinecap = "round"; // Set stroke smoothness
                         if (fill) {
                             svgPath.style.fill = `rgb(${colorsByIndex[f.color][0]},${colorsByIndex[f.color][1]},${colorsByIndex[f.color][2]})`;
                         }
